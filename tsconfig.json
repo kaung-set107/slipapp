@@ -5,13 +5,25 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "react-hook-form": [
+        "./vendor/react-hook-form/index"
+      ],
+      "zod": [
+        "./vendor/zod/index"
+      ],
+      "@hookform/resolvers/*": [
+        "./vendor/@hookform/resolvers/*"
       ]
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    ".expo/types/**/*.ts"
+  ],
+  "exclude": [
+    ".expo"
   ]
 }
